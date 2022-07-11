@@ -1,9 +1,9 @@
 {
   "name": "test-monorepo-456",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "dependencies": {
-    "test-monorepo-123": "^0.1.0"
+    "test-monorepo-123": "^0.1.2"
   },
   "scripts": {
     "start": "react-app-rewired start",
