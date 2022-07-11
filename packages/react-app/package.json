@@ -1,5 +1,5 @@
 {
-  "name": "@namespace/react-app",
+  "name": "test-monorepo-456",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
