@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/murali-condenast/monorepo/compare/@murali-org/react-component@0.4.0...@murali-org/react-component@0.5.0) (2022-07-12)
+
+
+### Features
+
+* **workflow:** new env ([bb88486](https://github.com/murali-condenast/monorepo/commit/bb88486f8e91f6bc9548fa0aa11ad5e7010e1b47))
+
+
+
+
+
 # [0.4.0](https://github.com/murali-condenast/monorepo/compare/@murali-org/react-component@0.3.0...@murali-org/react-component@0.4.0) (2022-07-12)
 
 
