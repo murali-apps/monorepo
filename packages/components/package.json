@@ -1,5 +1,5 @@
 {
-  "name": "@murali/react-component",
+  "name": "@muralim1312/react-component",
   "version": "0.1.4",
   "private": false,
   "publishConfig": {
@@ -18,5 +18,5 @@
     "react-scripts": "3.2.0",
     "typescript": "3.6.4"
   },
-  "gitHead": "8c422e794462bc034f8283c4168e77c590d0407b"
+  "gitHead": "d7220b01dfd94855f8f51f767eaa21dce6ca7db6"
 }
