@@ -1,5 +1,5 @@
 {
-  "name": "@murali/react-app",
+  "name": "@murali-org/react-app",
   "version": "0.1.5",
   "private": false,
   "dependencies": {
@@ -25,5 +25,5 @@
     "react-scripts": "3.2.0",
     "typescript": "3.6.4"
   },
-  "gitHead": "d7220b01dfd94855f8f51f767eaa21dce6ca7db6"
+  "gitHead": "2be82aa2665ee202b8f7dc3162bb6bf918fe27bd"
 }

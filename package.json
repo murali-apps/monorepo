@@ -1,5 +1,5 @@
 {
-  "name": "@murali/monorepo-app",
+  "name": "@murali-org/monorepo-app",
   "private": false,
   "workspaces": [
     "packages/*"
