@@ -13,7 +13,7 @@
     "start": "lerna run start --stream",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
-    "publish": "lerna publish patch --yes"
+    "publish": "git fetch && lerna publish patch --yes"
   },
   "devDependencies": {
     "enzyme-to-json": "^3.4.3",
