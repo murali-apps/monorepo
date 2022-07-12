@@ -1,0 +1,40 @@
+name: Publish
+on:
+  pull_request:
+    types: [closed]
+    branches:      
+      - development
+      - master
+
+jobs:
+  publish:
+    if: github.event.pull_request.merged == true # only trigger on successful PR merge
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # needed for mono repo
+
+    - name: Read .nvmrc
+      run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+      id: nvm
+
+    - name: Use Node.js (.nvmrc)
+      uses: actions/setup-node@v1
+      with:
+        node-version: "${{ steps.nvm.outputs.NVMRC }}"
+
+    - name: "Version and publish"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor}}@users.noreply.github.com"
+        if [ ${{ github.base_ref }} = development ]; then
+          npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
+        else
+          npx lerna version --conventional-commits --conventional-graduate --yes
+        fi
+        npx lerna publish from-git --yes
