@@ -1,5 +1,5 @@
 {
-  "name": "namespace",
+  "name": "@murali/monorepo-app",
   "private": false,
   "workspaces": [
     "packages/*"
@@ -114,5 +114,6 @@
     "singleQuote": true,
     "printWidth": 120,
     "tabWidth": 2
-  }
+  },
+  "version": "0.0.0"
 }
