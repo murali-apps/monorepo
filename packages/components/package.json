@@ -1,5 +1,5 @@
 {
-  "name": "test-monorepo-123",
+  "name": "@murali/react-component",
   "version": "0.1.2",
   "private": false,
   "main": "src/",
@@ -14,5 +14,6 @@
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
     "typescript": "3.6.4"
-  }
+  },
+  "gitHead": "88061db4e462b120ec0fcf5eaa568914fd8bef49"
 }

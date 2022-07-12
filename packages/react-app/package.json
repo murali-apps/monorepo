@@ -1,9 +1,9 @@
 {
-  "name": "test-monorepo-456",
+  "name": "@murali/react-app",
   "version": "0.1.2",
   "private": false,
   "dependencies": {
-    "test-monorepo-123": "^0.1.2"
+    "@murali/react-component": "^0.1.2"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -21,5 +21,6 @@
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
     "typescript": "3.6.4"
-  }
+  },
+  "gitHead": "88061db4e462b120ec0fcf5eaa568914fd8bef49"
 }
