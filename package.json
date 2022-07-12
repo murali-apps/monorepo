@@ -119,5 +119,17 @@
     "printWidth": 120,
     "tabWidth": 2
   },
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "description": "[![CircleCI](https://circleci.com/gh/michaljach/modern-monorepo-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/michaljach/modern-monorepo-boilerplate/tree/master)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murali-condenast/monorepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murali-condenast/monorepo/issues"
+  },
+  "homepage": "https://github.com/murali-condenast/monorepo#readme"
 }
