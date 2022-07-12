@@ -2,6 +2,9 @@
   "name": "@murali/react-component",
   "version": "0.1.3",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "src/",
   "peerDependencies": {
     "@types/jest": "24.0.19",
@@ -15,5 +18,5 @@
     "react-scripts": "3.2.0",
     "typescript": "3.6.4"
   },
-  "gitHead": "88061db4e462b120ec0fcf5eaa568914fd8bef49"
+  "gitHead": "8c422e794462bc034f8283c4168e77c590d0407b"
 }
