@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/murali-condenast/monorepo/compare/@murali-org/react-component@0.3.0...@murali-org/react-component@0.4.0) (2022-07-12)
+
+
+### Features
+
+* **package:** name change ([1cc4a87](https://github.com/murali-condenast/monorepo/commit/1cc4a875b695f06b90b4a6ab34481f95d0d78db3))
+
+
+
+
+
 # [0.3.0](https://github.com/murali-condenast/monorepo/compare/@murali-org/react-component@0.2.0...@murali-org/react-component@0.3.0) (2022-07-12)
 
 
