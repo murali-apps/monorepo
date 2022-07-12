@@ -2,9 +2,6 @@
   "name": "@murali-org/react-app",
   "version": "0.1.6",
   "private": false,
-  "dependencies": {
-    "@murali/react-component": "^0.1.4"
-  },
   "publishConfig": {
     "access": "public"
   },
