@@ -16,21 +16,15 @@ jobs:
       with:
         fetch-depth: 0 # needed for mono repo
 
-    - name: Read .nvmrc
-      run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
-      id: nvm
-
     - name: Use Node.js (.nvmrc)
       uses: actions/setup-node@v3
       with:
-        node-version: "${{ steps.nvm.outputs.NVMRC }}"
+        node-version-file: '.nvmrc'
 
     - name: "Version and publish"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config user.name "${{ github.actor }}"
-        git config user.email "${{ github.actor}}@users.noreply.github.com"
-        echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > .npmrc
+        npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
         npm ci
-        npm run publish -- patch --yes
+        npm run publish --patch --yes
