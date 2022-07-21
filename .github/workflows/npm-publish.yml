@@ -30,5 +30,4 @@ jobs:
         git config user.email "${{ github.actor}}@users.noreply.github.com"
         npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
         npm ci
-        npm run publish -- patch from-git --no-push --yes
-        git push origin master --force
+        npm run publish -- from-git patch --no-push --yes        
