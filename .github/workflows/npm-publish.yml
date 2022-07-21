@@ -31,4 +31,4 @@ jobs:
         npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
         npm ci
         npm run publish -- patch --no-push --yes
-        git push origin master
+        git push origin master --force
