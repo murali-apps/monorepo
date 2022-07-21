@@ -5,8 +5,9 @@ on:
     branches:      
       - master
 
-jobs:
+jobs:  
   publish:
+    permissions: write-all
     if: github.event.pull_request.merged == true # only trigger on successful PR merge
     runs-on: ubuntu-latest
 
