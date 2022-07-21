@@ -1,6 +1,6 @@
 {
   "name": "@murali-org/react-component",
-  "version": "0.5.14",
+  "version": "0.5.15",
   "private": false,
   "publishConfig": {
     "access": "public"
