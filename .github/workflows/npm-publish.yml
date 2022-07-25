@@ -30,4 +30,4 @@ jobs:
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor}}@users.noreply.github.com"        
         npm ci
-        npm run publish -- from-git patch --no-push --yes        
+        npm run publish -- patch --no-push --yes        
