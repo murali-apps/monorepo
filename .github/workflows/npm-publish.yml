@@ -23,11 +23,6 @@ jobs:
         node-version-file: '.nvmrc'
         registry-url: '//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}'
 
-    - name: Extract branch name
-      shell: bash
-      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-      id: extract_branch
-
     - name: "Version and publish"
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,7 +30,15 @@ jobs:
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor}}@users.noreply.github.com"        
         npm ci
-        git checkout -b ${{ steps.extract_branch.outputs.branch }}-PUBLISH
-        git push origin ${{ steps.extract_branch.outputs.branch }}-PUBLISH
-        npm run publish -- patch --yes        
+        npm run publish -- patch --no-push --yes
+
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v4
+
+    - name: Merge
+      uses: peter-evans/enable-pull-request-automerge@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
         
