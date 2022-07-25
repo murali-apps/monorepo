@@ -20,8 +20,8 @@ jobs:
     - name: Use Node.js (.nvmrc)
       uses: actions/setup-node@v3
       with:
-        node-version-file: ".nvmrc"
-        registry-url: "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}""
+        node-version-file: '.nvmrc'
+        registry-url: '//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}'
 
     - name: "Version and publish"
       env:
