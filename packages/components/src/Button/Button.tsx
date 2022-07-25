@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
 
-const Button = (): ReactElement => <button type="submit">Button 2</button>;
+const Button = (): ReactElement => <button type="submit">Button 7</button>;
 
 export default Button;
